@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f0f7ff;
-      color: #183153;
-      padding: 40px 20px;
-    }
-    .card {
-      background: white;
-      padding: 28px 18px;
-      border-radius: 16px;
-      max-width: 420px;
-      margin: 30px auto;
-      box-shadow: 0 4px 15px #0001;
-    }
-    h1 { color: #1769aa; }
-    button {
-      background: #1769aa;
-      color: white;
-      border: 0;
-      border-radius: 8px;
-      padding: 12px 20px;
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyan | My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(135deg, #071952, #088395, #35A29F);
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            padding: 35px 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 24px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #eefcff;
+        }
+
+        button {
+            padding: 13px 28px;
+            border: none;
+            border-radius: 30px;
+            background: #ffffff;
+            color: #071952;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b8f7ef;
+        }
+
+        footer {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #e0ffff;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Welcome to My Website!</h1>
-    <p>Hello! I am learning technology and building my first website.</p>
-    <p>This is my first project on GitHub.</p>
-    <button onclick="alert('Congratulations! Your website works!')">Click Me</button>
-  </div>
+    <div class="card">
+        <div class="emoji">🚀</div>
+
+        <h1>Welcome!</h1>
+
+        <p>
+            Hey, I'm Gyan 👋<br>
+            Welcome to my first website!
+            I'm learning technology and building
+            amazing things with code.
+        </p>
+
+        <button onclick="showMessage()">Click Me ✨</button>
+
+        <footer>
+            Made with ❤️ by Gyan
+        </footer>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Congratulations! Welcome to Gyan's Website! 🎉");
+        }
+    </script>
 </body>
 </html>
