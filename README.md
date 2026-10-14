@@ -9,5 +9,4 @@ I am learning GitHub and exploring technology.
 - Build engineering projects
 - Improve my technical skills
 
-More projects coming soon!# my-first-project
-My first GitHub project
+More projects coming soon! 
